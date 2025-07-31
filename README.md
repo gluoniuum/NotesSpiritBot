@@ -1,5 +1,10 @@
 # 🌿 NotesSpiritBot
 
+![python](https://img.shields.io/badge/Python-3.10%2B-informational)
+![telegram](https://img.shields.io/badge/Telegram-Bot-blue)
+![status](https://img.shields.io/badge/Status-Production-green)
+![license](https://img.shields.io/badge/License-Private-lightgrey)
+
 **NotesSpiritBot** — a commercial **Telegram bot** built for the creator of the Instagram and Telegram channel **“Notes of Spirit.”**  
 
 The bot automates the sale and distribution of the author’s digital books, providing a seamless experience for readers and clients.  
