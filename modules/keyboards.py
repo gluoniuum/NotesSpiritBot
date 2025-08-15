@@ -14,10 +14,10 @@ start_menu = InlineKeyboardMarkup(
 
 free_menu = InlineKeyboardMarkup(
     inline_keyboard = [
-        [InlineKeyboardButton(text = 'Хатха Йога Прадипика', callback_data = 'flower_cb')],
-        [InlineKeyboardButton(text = 'Атмосфера Человека', callback_data = 'health_cb')],
-        [InlineKeyboardButton(text = 'Личный Магнетизм', callback_data = 'second_wisdom_cb')],
-        [InlineKeyboardButton(text = 'Книга Медиумов', callback_data = 'first_wisdom_cb')],
-        [InlineKeyboardButton(text = 'Сила Формы', callback_data = 'health_cb')],
-        [InlineKeyboardButton(text = 'Чакры', callback_data = 'health_cb')],
+        [InlineKeyboardButton(text = 'Хатха Йога Прадипика', callback_data = 'hatha_cb')],
+        [InlineKeyboardButton(text = 'Атмосфера Человека', callback_data = 'atmos_cb')],
+        [InlineKeyboardButton(text = 'Личный Магнетизм', callback_data = 'magnet_cb')],
+        [InlineKeyboardButton(text = 'Книга Медиумов', callback_data = 'medium_cb')],
+        [InlineKeyboardButton(text = 'Сила Формы', callback_data = 'forma_cb')],
+        [InlineKeyboardButton(text = 'Чакры', callback_data = 'chakra_cb')],
 ])

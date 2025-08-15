@@ -16,7 +16,8 @@ import os
 
 ## routers_imp
 from handlers_command.start import rt as start_router
-from handlers_command.free_books import rt as free_router
+from presentation.free_books import rt as free_router
+from chosser import rt as chosser_router
 ## Token 
 load_dotenv()
 API_TOKEN = os.getenv("BOT_TOKEN")
@@ -36,7 +37,7 @@ async def main():
 ### <routers
     dp.include_router(start_router)
     dp.include_router(free_router)
-
+    dp.include_router(chosser_router)
 ### >
 
 
