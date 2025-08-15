@@ -29,8 +29,7 @@ log = logging.getLogger("notes_spirit_bot")
 
 #### main
 async def main():
-    print(API_TOKEN)
-    bot = Bot(token=API_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    bot = Bot(token=API_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.MARKDOWN))
     dp = Dispatcher()
     log.info("Bot is starting...")
 

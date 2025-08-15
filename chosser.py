@@ -10,6 +10,7 @@ import asyncio
 import logging
 #
 import modules.keyboards as kb
+import repositories.free_books as rep
 import modules.texts as txts
 #
 ## repository
@@ -20,18 +21,11 @@ logger = logging.getLogger(__name__)
 async def chosser_books(callback : CallbackQuery):
     logger.info(f'{callback.message.chat.id}')
     data = callback.data
-    print(data)
-
-    desc_rep = {
-            'hatha_cb': txts.kibalion_desc,
-            'atmos_cb': txts.atmos_desc,
-            'magnet_cb': txts.magnet_desc,
-            'medium_cb': txts.medium_desc,
-            'forma_cb': txts.forma_desc,
-            'chakra_cb': txts.chakra_desc}
-    for desc in desc_rep:
+    
+    for desc in rep.desc_rep:
         if data == desc: 
-           await callback.message.answer(desc_rep[desc])
+            await callback.answer('') 
+            await callback.message.answer(rep.desc_rep[desc])
     
 #
 ####
