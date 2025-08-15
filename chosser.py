@@ -24,13 +24,14 @@ async def chosser_books(callback : CallbackQuery):
 
     desc_rep = {
             'hatha_cb': txts.kibalion_desc,
-            'atmos_cb': 'three',
-            'magnet_cb': 'four',
-            'medium_cb': 'five',
-            'forma_cb': 'five',
-            'chakra_cb': 'five'}
+            'atmos_cb': txts.atmos_desc,
+            'magnet_cb': txts.magnet_desc,
+            'medium_cb': txts.medium_desc,
+            'forma_cb': txts.forma_desc,
+            'chakra_cb': txts.chakra_desc}
     for desc in desc_rep:
-        await callback.message.answer({desc_rep[desc])
+        if data == desc: 
+           await callback.message.answer(desc_rep[desc])
     
 #
 ####
